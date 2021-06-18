@@ -17,13 +17,24 @@ components:
     image: 'registry.redhat.io/codeready-workspaces/plugin-java8-rhel8@sha256:ecaa9ddef5ca8db9552f1b5e66f7aacb19d72e488d718d8135b1e1d9f66a1a7a'
     memoryLimit: 512Mi
     mountSources: true
+    env:
+      - name: VOTING_API_SERVICE_HOST
+        value: vote-api
+      - name: VOTING_API_SERVICE_PORT
+        value: 9000
 commands:
-  - name: 1. Run Python App
+  - name: Run Python App
     actions:
       - type: exec
         component: python
         command: python app.py
         workdir: '${CHE_PROJECTS_ROOT}/vote-ui-python'
+  - name: Install dependencies
+    actions:
+      - workdir: '${CHE_PROJECTS_ROOT}/vote-ui-python'
+        type: exec
+        command: 'pip install --user -r requirements.txt'
+        component: python
   - name: Debug current file
     actions:
       - type: vscode-launch
