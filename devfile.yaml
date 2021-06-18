@@ -18,7 +18,7 @@ components:
     memoryLimit: 512Mi
     mountSources: true
 commands:
-  - name: 1. Run App
+  - name: 1. Run Python App
     actions:
       - type: exec
         component: python
