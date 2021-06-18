@@ -19,9 +19,9 @@ components:
     mountSources: true
     env:
       - name: VOTING_API_SERVICE_HOST
-        value: vote-api
+        value: 'vote-api'
       - name: VOTING_API_SERVICE_PORT
-        value: 9000
+        value: '9000'
 commands:
   - name: Run Python App
     actions:
