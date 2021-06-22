@@ -22,9 +22,9 @@ spec:
         params:
           - name: APP_NAME
             value: $(tt.params.git-repo-name)
-          - name: APP_GIT_REPO
+          - name: GIT_REPO
             value: $(tt.params.git-repo-url)
-          - name: APP_GIT_REVISION
+          - name: GIT_REVISION
             value: $(tt.params.git-revision)
         pipelineRef:
           name: vote-ui
