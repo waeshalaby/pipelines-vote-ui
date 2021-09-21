@@ -9,4 +9,4 @@ spec:
   - bindings:
     - ref: vote-ui
     template:
-      name: vote-ui
+      ref: vote-ui
