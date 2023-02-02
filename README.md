@@ -5,5 +5,5 @@
 
 ## Developer Workspace
 
-[![Contribute](https://raw.githubusercontent.com/blues-man/cloud-native-workshop/demo/factory-contribute.svg)](https://codeready-openshift-workspaces.apps.wzs9uw4c.westeurope.aroapp.io/factory?url=https://github.com/blues-man/pipelines-vote-ui&policies.create=peruser)
+[![Contribute](https://raw.githubusercontent.com/blues-man/cloud-native-workshop/demo/factory-contribute.svg)](https://devspaces.apps.rhte.0x74.p1.openshiftapps.com/f?url=https://github.com/blues-man/pipelines-vote-ui&policies.create=peruser)
 
